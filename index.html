@@ -21,23 +21,24 @@
         </ul>
       </nav>
     </header>
-    <label aria-label="preferences">Preferences</label>
-    <input type="text" name="preferences">
-
-    <!--comment
-    mobile friendly
-    desktop version
-    switch off graphics
-    switch off sounds
-    reduce contrast
-    increase contrast
-    black & white
-    Re-size Text
-    Style sheets:  off
-    Keyboard access and visual focus
-    Moving, Flashing, or Blinking Content
-    Multimedia (video, audio) alternatives
--->
+    
+    <form action="/" method="get">
+      <label for="preference">Choose your preference from the list:</label>
+      <input list="preferences" name="preference" id="preference">
+      <datalist id="preferences">
+        <option value="Mobile friendly">
+        <option value="Desktop version">
+        <option value="Switch off graphics">
+        <option value="Switch off sounds">
+        <option value="Reduce contrast">
+        <option value="Black & white">
+        <option value="Re-size Text">
+        <option value="Style sheets: Off">
+        <option value="Switch off sounds">
+        <option value="Reduce contrast">
+      </datalist>
+      <input type="submit">
+    </form>
     <label aria-label="disableAnime">Disable Animations</label>
     <input type="checkbox">
     <div>
